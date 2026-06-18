@@ -60,8 +60,8 @@ describe("FlippaClient", () => {
 
       expect(mockGet).toHaveBeenCalledWith("/listings", {
         params: {
-          page_number: 2,
-          page_size: 50,
+          "page[number]": 2,
+          "page[size]": 50,
           "filter[property_type]": "saas",
           "filter[status]": "open",
           "filter[sale_method]": "auction",

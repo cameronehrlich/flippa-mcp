@@ -95,8 +95,8 @@ export class FlippaClient {
     /** Search listings with query parameters */
     async searchListings(params) {
         const queryParams = {
-            page_number: params.page_number,
-            page_size: params.page_size,
+            "page[number]": params.page_number,
+            "page[size]": params.page_size,
             "filter[status]": params.status,
             "filter[sale_method]": params.sale_method,
             sort_alias: params.sort_alias,
